@@ -22,7 +22,7 @@ def convert(x):
 print 'salil'
 
 # give your path in the glob()
-for json_filename in glob('C:\Users\Salil\Dropbox\Competitions\Yelp competition\yelp_training_set\yelp_training_set_review.json'):
+for json_filename in glob('path'):
     csv_filename = '%s.csv' % json_filename[:-5]
     print 'Converting %s to %s' % (json_filename, csv_filename)
     df = pd.DataFrame([convert(line) for line in file(json_filename)])
